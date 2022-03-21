@@ -13,12 +13,14 @@ body{
     text-align: center;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: radial-gradient(circle, rgba(255,82,112,1) 0%, rgba(242,7,60,1) 64%, rgba(123,1,33,1) 100%);
 }
 
 canvas{
   padding: 0;
   margin: 0;
   z-index: 0;
+  height: 100%;
 }
 
 @media  screen and (orientation:portrait){

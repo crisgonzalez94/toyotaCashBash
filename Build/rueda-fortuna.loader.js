@@ -16,17 +16,17 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
   /*EL juego es landscape, asi que debemos ver si esta portrait
   en caso de que este portrait invertimos la medida del canvas*/
   if (window.innerHeight > window.innerWidth) {
-    canvas.style.width = `${window.innerHeight}px`;
     canvas.style.height = `${window.innerWidth}px`;
+    //canvas.style.width = `${window.innerHeight}px`;
   }else{
-    canvas.style.width = `${window.innerWidth}px`;
     canvas.style.height = `${window.innerHeight}px`;
+    //canvas.style.width = `${window.innerWidth}px`;
   }
   
 } else {
   //Si es escritorio solo adaptamos alto
-  canvas.style.width = `${window.innerWidth}px`;
   canvas.style.height = `${window.innerHeight}px`;
+  //canvas.style.width = `${window.innerWidth}px`;
 }
 
 //------------------------------------------------------------------
